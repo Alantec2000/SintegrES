@@ -8,7 +8,7 @@ use App\Sintegra;
 use Session;
 
 class HomeController extends Controller {
-    public function load(){
+    public function carregarHome(){
     	$id = session(Usuario::ID);
     	$usuario = (new Usuario())->where(Usuario::ID, $id)->get()->first();
     	$sintegra = new Sintegra();

@@ -12,7 +12,7 @@
 */
 
 Route::group(["middleware"=>["user"]], function(){
-	Route::get('/', "HomeController@load")->name('home');
+	Route::get('/', "HomeController@carregarHome")->name('home');
 	
 	Route::get('/consulta/get/{id_consulta}', "SintegraController@getDetalhesConsulta");
 	Route::get('/consulta/delete/{id_consulta}', "SintegraController@removerConsulta");

@@ -18,7 +18,7 @@ class Usuario extends Model {
     const SENHA_REQUEST = "senha";
 
 
-    public function realizarLogin($login, $senha){
+    public function getUsuarioLoginSenha($login, $senha){
     	$senha = str_replace(['-','\'','"',';'], '', $senha);
     	$usuario = (new Usuario())->where([[self::LOGIN, $login],[self::SENHA, $senha]])->get()->first();
     	return $usuario;
@@ -34,7 +34,7 @@ class Usuario extends Model {
     	$usuario = null;
     	if(isset($params[self::LOGIN_REQUEST], $params[self::SENHA_REQUEST])){
     		$usuario = new Usuario();
-    		$usuario = $usuario->realizarLogin($params['usuario'], $params['senha']);
+    		$usuario = $usuario->getUsuarioLoginSenha($params['usuario'], $params['senha']);
     	}
     	return $usuario;
     }

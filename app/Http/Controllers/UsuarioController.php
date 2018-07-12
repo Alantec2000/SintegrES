@@ -18,7 +18,7 @@ class UsuarioController extends Controller
 
 	public function autenticar(){
 		$params = $this->request->all();
-		$usuario = $this->usuario->realizarLogin($params['login_usuario'], $params['senha_usuario']);
+		$usuario = $this->usuario->getUsuarioLoginSenha($params['login_usuario'], $params['senha_usuario']);
 
 		if(!is_null($usuario)){
 			$this->iniciarSessao($usuario);
