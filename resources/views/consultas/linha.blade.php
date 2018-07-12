@@ -9,7 +9,7 @@
 		{{TextUtils::formatar(TextUtils::CNPJ_MASK, $json->cnpj)}}
 	</td>
 	<td class="align-middle">
-		{{date("d/m/Y H:m:s",$consulta['created_at'])}}
+		{{date("d/m/Y H:m:s",strtotime($consulta['created_at']))}}
 	</td>
 	<td class="align-middle">
 		<a class="btn btn-info" href='{{url("consulta/get/{$consulta['id']}")}}'>

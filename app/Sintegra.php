@@ -24,7 +24,8 @@ class Sintegra extends Model {
             self::ID . " as id", 
             self::USUARIO . " as usuario", 
             self::CNPJ . " as usuario", 
-            self::JSON
+            self::JSON,
+            self::TABELA . '.updated_at as created_at'
         ];
         
         $consultas = $this
