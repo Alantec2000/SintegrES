@@ -1,0 +1,55 @@
+#sintegres-navbar {
+	margin-bottom: 20px;
+}
+
+.mg-top {
+	margin-top: 10px;
+}
+
+#nome_usuario_sintegres{
+	color:darkgrey;
+}
+
+a.orange-component,
+span.orange-component{
+	color:orange;
+}
+
+#login_usuario_error_label{
+	background-color: orange;
+	color:white;
+	width: 100%;
+	padding: 5px 0;
+}
+
+#btn_consultar_cnpj.orange-component,
+#btn_submit.orange-component{
+	border-width: 0px;
+	background-color:orange;
+	color: white;
+}
+
+#consulta_sintegra_wrapper{
+	max-width: 331px;
+	margin: 0 auto;
+}
+
+#consulta_cnpj_content{
+	margin-top: 40px;
+}
+
+#consultar_cnpj_wrapper,
+#consultar_cnpj_wrapper{
+	background-color: transparent;
+}
+
+span.label-detalhe-empresa {
+	font-weight: bold;
+}
+
+#detalhes_empresa_body > .row > div,
+#detalhes_empresa_informacao_complementar > .row > div,
+#detalhes_empresa_localizacao_contato > .row > div{
+	border: 1px solid #ccc;
+	padding:10px 10px;
+}
